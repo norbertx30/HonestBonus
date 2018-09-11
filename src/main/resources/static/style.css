@@ -1,0 +1,298 @@
+/*-------------------------------INDEX.PHP---------------------------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Lato', sans-serif; /*Google Fonts - Lato - Łukasz Dziedzic*/
+	font-size: 22px;
+	color: #666;
+	background-color: #133046;
+}
+
+/* index.php - Strona główna */
+
+#container{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+h1.logo{
+	
+	width: 1000px;
+	height: 10vh;
+	letter-spacing: 4px;
+	font-size: 64px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.logo a{
+	text-decoration: none;
+	color: #f1e4b3;
+}
+.menu{
+	width: 1000px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}
+
+.menu ul > li{
+	float:left;
+	margin: 0;
+	padding:0;
+	margin: 5px 5px;
+	margin-left: 0px;
+	background-color: #15959f;
+	border: 3px solid #133046;
+}
+
+.menu a{
+	display: block;
+    height: 26px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #133046;
+}
+
+.menu a:hover{
+	background-color: #f4a090;
+	color: #f26144;
+	opacity: 0.9;	
+}
+
+.paralax1, .paralax2, .paralax3, .paralax4{
+	position: relative;
+	opacity: 1;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.paralax1{
+	background-image: url('img/c.jpeg'); /*Free stock photos · Pexels.com*/
+	min-height: 90vh;
+}
+
+.paralax2{
+	background-image: url('img/a.jpeg'); /*Free stock photos · Pexels.com*/
+	min-height: 80vh;
+}
+
+.paralax3{
+	background-image: url('img/b.jpeg'); /*Free stock photos · Pexels.com*/
+	min-height: 50vh;
+}
+
+
+.centertext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 64px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	
+}
+
+.centertext .border{
+	color: #000;
+	padding: 20px;
+	border: 5px solid #000;
+	background-color: white;
+}
+
+.belka{
+	height: 200px;
+}
+.section{
+	width: 1000px;
+	color: #f1e4b3;
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* //////////////////////////////////JS scrollto button///////////////////////*/
+
+.scrollup
+{
+	width: 40px;
+	height: 40px;
+	text-decoration: none; 
+	display: none;
+	background: url("img/scrollUpIcon.png") no-repeat 0px 0px;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 20;
+	opacity: 0.7;
+}
+
+.scrollup:hover{
+	opacity: 1;
+	
+}
+
+/*/////////////////////////////////// Rejestracja.php ///////////////////////*/
+
+.containerindex{
+	background-image: url("img/cc.jpeg"); /* Free Stock Photo Pexels.com*/
+	height: 100vh;
+	width: 100vw;
+	background-position: center;
+	background-size: cover;
+	display:flex;
+	flex-direction:column;
+	justify-content:left;
+	align-items:center;
+	
+}
+
+.loginbox{
+	margin-top: 15vh;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 300px;
+	padding: 50px;
+	text-align: center;
+	background-image: url("img/upfeathers.png"); /* Background pattern from Subtle Patterns. Made by Martuchox. */
+	-webkit-box-shadow: 10px 10px 73px 13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 73px 13px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 73px 13px rgba(0,0,0,0.75);
+	border-radius: 50px;
+	border: 2px solid #133046;
+	color: #133046;
+	
+}
+
+
+.loginbox h3{
+	margin-top: 10px;
+}
+
+.logintextbox, .passwordtextbox{
+	border-radius: 10px;
+	color: #15959f;
+	width: 200px;
+	height: 20px;
+	padding: 3px;
+	outline: none;
+	border: 2px solid #133046;
+}
+
+.logintextbox:hover, .passwordtextbox:hover, .logintextbox:focus, .passwordtextbox:focus{
+	border: 2px solid #15959f;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+}
+
+.submitbutton{
+	border: 2px solid #133046;
+	border-radius: 10px;
+	cursor: pointer;
+	color:#f1e4b3;
+	font-Size: 18px;
+	background-color: #15959f;
+	width: 150px;
+	height: 40px;
+	outline: none;
+}
+
+.submitbutton:hover{
+	background-color: #f4a093;
+	border: 2px solid #f26144;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+}
+
+.registerlink{
+	color: #f1e4b3;
+	background-color: #15959f;
+	font-Size: 18px;
+	display:block;
+	padding: 8px;
+	text-decoration: none;
+	border: 2px solid #133046;
+	margin-left: auto;
+	margin-right: auto;
+	width: 134px;
+	height: 20px;
+	border-radius: 10px;
+	font-Size: 18px;
+	
+	
+}
+
+.registerlink:hover{
+	background-color: #f4a093;
+	border: 2px solid #f26144;
+}
+
+.paralax4{
+	background-image: url('img/cc.jpeg'); /*Free stock photos · Pexels.com*/
+	min-height: 100vh;
+}
+
+.paralax5{
+	background-image: url('img/b.jpeg'); /*Free stock photos · Pexels.com*/
+	min-height: 100vh;
+}
+
+/* ////////////////////////////////// RejestracjaForm.html //////////////////////// */
+
+.containerregisterbox{
+	background-image: url("img/register.jpeg"); /* Free Stock Photo Pexels.com*/
+	height: 100vh;
+	width: 100vw;
+	background-position: center;
+	background-size: cover;
+	display:flex;
+	flex-direction:column;
+	justify-content:left;
+	align-items:center;
+	
+}
+
+.registerbox{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 300px;
+	min-height: 350px;
+	padding: 50px;
+	text-align: center;
+	background-image: url("img/upfeathers4.png"); /* Background pattern from Subtle Patterns. Made by Martuchox. */
+	-webkit-box-shadow: 10px 10px 73px 13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 73px 13px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 73px 13px rgba(0,0,0,0.75);
+	border-radius: 50px;
+}
+
+.registerbox h3{
+	margin-top: 10px;
+}
+
+.error{
+	color: darkred;
+	padding: 10px;
+}

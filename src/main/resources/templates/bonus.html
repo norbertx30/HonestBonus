@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	
+	<div id="container">
+		<a href="#" class="scrollup"></a>
+		<header>
+			<h1 class="logo"><a href="#" style="color:#f1e4b3;">BONUS</a></h1>
+		</header>
+		
+		
+			
+		<div class="bonus">
+				<div class="menu">
+					<nav>
+						<ul>
+							<li><a href="twojprofil.html" id="menulink1">Raport</a></li>
+							<li><a href="client.html" id="menulink3">Klient</a></li>
+							<li><a href="employee.html" id="menulink4">Pracownik</a></li>
+							<li><a href="index.html" id="menulink2">Wyloguj się</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div style="clear:both;"></div>
+		
+	
+	
+			<div class="raportcontainer">
+				<h1>Spis Bonusów <br/> +  ? dodawanie bonusów?</h1>
+				<table>
+					<tr >
+						<td >Company name</td>
+						<td >Share</td>
+					</tr>
+					<tr th:each="bonus: ${bonuses}">
+						<td th:text="${bonus.companyName}" />
+						<td th:text="${bonus.shareOfTransaction}" />
+					</tr>
+				</table>
+			</div>
+		</div>	
+	</div>
+
+</body>
+</html>
